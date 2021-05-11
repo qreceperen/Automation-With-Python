@@ -1,1 +1,1 @@
- #BAsic Python Tips and Tricks
+ # Basic Python Tips and Tricks
