@@ -27,6 +27,4 @@
 | Paper | Rock | WINS |
 | Scissor | Paper |  WINS |
 | Scissor | Rock | LOSES |
-| SAME | SAME | TIE |  
-
-
+| SAME | SAME | TIE |
