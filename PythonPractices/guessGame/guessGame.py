@@ -16,6 +16,10 @@ for guessTaken in range(1,7):
         break # if the guess is correct if statement stops.
     '''Note: Improve code by adding getting closer or getting far. Compare each guess  with previous one to compare whether guess is closer to secret number or not'''
 if guess == secretNumber:
-    print('Congrations! You guessed the correct number in ' + str(guessTaken) + ' guesses!')
+    print('Congratulations! You guessed the correct number in ' + str(guessTaken) + ' guesses!')
 else:
     print('Nope. The number I was thinking of was ' + str(secretNumber))
+
+
+
+# space
