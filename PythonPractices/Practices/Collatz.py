@@ -7,6 +7,8 @@ The output of this program could look something like this: Enter number: 3 10 5 
 # Program should force user to write correct number
 def collatz():
     while True: # Force user to write a whole number.
+
+
         try:
             number = int(input('Please write a number: '))
             break
