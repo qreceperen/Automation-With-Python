@@ -65,15 +65,3 @@ while True:  # This is the main game loop.
     elif playerMove == 'p' and computerMove == 's':
         print ("you lose!")
         loses +=1
-
-
-
-
-
-
-
-
-
-
-
-
