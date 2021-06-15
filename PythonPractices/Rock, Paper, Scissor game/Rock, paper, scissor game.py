@@ -36,7 +36,7 @@ while True:  # This is the main game loop.
         computerMove = 'p'
         print("PAPER")
     elif randomNumber == 3:
-        computerMove == 's'
+        computerMove = 's'
         print("SCISSORS")
 
     # Compare player Move and Computer move and record the win, loses and ties.
