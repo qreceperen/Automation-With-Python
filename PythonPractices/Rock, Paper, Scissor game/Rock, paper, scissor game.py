@@ -1,3 +1,4 @@
+#!/usr/bin/env python3 
 import random  # we can call random.randint here.
 import sys  # we can call sys.exit() here.
 
