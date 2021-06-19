@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import random, time, copy
 
 WIDTH = 60
@@ -16,4 +17,18 @@ for x in range(WIDTH):
 
     # Next Cell represent all the column. Game coordinates according to WIDTH and HEIGHT is created and coordinates stored in nextCell.
     # Each column generated up nested condition and created list is moved to the nextCell. Process start again. It will contiune to create all WIDTH (60) and HEIGHT (20).
-    nextCell.append(column)  
+    nextCell.append(column)
+
+# print(nextCell[3]) # DELETE END OF THE CODE!!!! you can try and see next cell.
+
+while True: # Main Program Loop.
+    print('/n/n/n/n/n') # Separate each step with new lines.
+    # currentCell creates the game table (Coordinates again and again WHY? IS IT REALY THE ITS FUNCTION? nextCell will be copied in to current cell continiously in order to compare with previous cells(I THINK !!!???))
+    currentCell = copy.deepcopy(nextCell) # Deepcopy is technical issue. Generally it is used if a list consist another list. nextCell has X and Y coordinates. Each Y number is stored under X numbers' list. 
+
+
+
+
+
+
+
