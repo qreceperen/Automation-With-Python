@@ -23,10 +23,15 @@ for x in range(WIDTH):
 
 while True: # Main Program Loop.
     print('/n/n/n/n/n') # Separate each step with new lines.
-    # currentCell creates the game table (Coordinates again and again WHY? IS IT REALY THE ITS FUNCTION? nextCell will be copied in to current cell continiously in order to compare with previous cells(I THINK !!!???))
-    currentCell = copy.deepcopy(nextCell) # Deepcopy is technical issue. Generally it is used if a list consist another list. nextCell has X and Y coordinates. Each Y number is stored under X numbers' list. 
+    # currentCell creates the game table
+    # currentCell will be printed on screen, necessary calculation will be held on current Cell (Dead cell , live cell etc), 
+    currentCells = copy.deepcopy(nextCell) # Deepcopy is technical issue. Generally it is used if a list consist another list. nextCell has X and Y coordinates. Each Y number is stored under X numbers' list. 
 
-
+    # Printing the currentCell on the screen
+    for y in range(HEIGHT): # It goes line by line( 1st row on X coordinate and 2nd row , 3rd row etc.  )
+        for x in range(WIDTH):
+            print(currentCells[x][y], end='') # currentCell [x][y] will find a specific one cell, located in currentCells [x][y] location. end allow the print line to continue on one line. 
+        print() # It prints a new line at the end of the code.
 
 
 
