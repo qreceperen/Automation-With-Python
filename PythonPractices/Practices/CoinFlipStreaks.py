@@ -10,7 +10,7 @@ import random
 tries = 0
 flipCoinsRecordList = []
 numberOfStreak = 0
-while tries < 10:
+while tries < 10000:
 
     flipCoins = random.randint(0,1)
     if flipCoins == 0:
@@ -21,10 +21,22 @@ while tries < 10:
 joinflipRecordList = ''.join(flipCoinsRecordList)
 
 # Find number of streaks.
-print(type(joinflipRecordList))
-print(joinflipRecordList)
+# print(joinflipRecordList) # All flip coins results printed (string)
 
 
+### K lenght character consecutive count. NEED TO CHECK AGAIN.
+K = 6
+
+res = []
+
+for idx, ele in enumerate(joinflipRecordList):
+
+    substr = ele *K  # it multiplies each iteration in the string with K
+
+    if joinflipRecordList[idx : idx + K] == substr: # start from each letter to check K lenght consecutive characters. idx = 0 idx +k = 6. idx =1 idx + K = 7, idx =2 idx +K =8. Check 6 characters portion for each iteration.
+        res.append(substr)
+
+print(str(list(res)))
 
 
-# python count letter streaks in string Buradan arastirmaya devam et. 
+# TRY TO COUNT HOW MANY TTTTTT AND HHHHHH in the list. 
