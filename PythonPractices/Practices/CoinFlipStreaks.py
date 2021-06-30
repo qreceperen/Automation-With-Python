@@ -24,19 +24,19 @@ joinflipRecordList = ''.join(flipCoinsRecordList)
 # print(joinflipRecordList) # All flip coins results printed (string)
 
 
-### K lenght character consecutive count. NEED TO CHECK AGAIN.
-K = 6
+# Calculate 6 consecutive 'H' or 'T' 
+letterLenght = 6
 
-res = []
+letterLenghtList = []
 
-for idx, ele in enumerate(joinflipRecordList):
+for index, letter in enumerate(joinflipRecordList):
 
-    substr = ele *K  # it multiplies each iteration in the string with K
+    subList = letter * letterLenght  # it multiplies each iteration in the string with K
 
-    if joinflipRecordList[idx : idx + K] == substr: # start from each letter to check K lenght consecutive characters. idx = 0 idx +k = 6. idx =1 idx + K = 7, idx =2 idx +K =8. Check 6 characters portion for each iteration.
-        res.append(substr)
+    if joinflipRecordList[index : index + letterLenght] == subList: # start from each letter to check K lenght consecutive characters. idx = 0 idx +k = 6. idx =1 idx + K = 7, idx =2 idx +K =8. Check 6 characters portion for each iteration.
+        letterLenghtList.append(subList)
 
-print(str(list(res)))
+print(str(list(letterLenghtList)))
 
 
 # TRY TO COUNT HOW MANY TTTTTT AND HHHHHH in the list. 
