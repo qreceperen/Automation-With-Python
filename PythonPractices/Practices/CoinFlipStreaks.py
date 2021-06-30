@@ -27,16 +27,16 @@ joinflipRecordList = ''.join(flipCoinsRecordList)
 # Calculate 6 consecutive 'H' or 'T' 
 letterLenght = 6
 
-letterLenghtList = []
+consecutiveLetterList = []
 
 for index, letter in enumerate(joinflipRecordList):
 
     subList = letter * letterLenght  # it multiplies each iteration in the string with K
 
     if joinflipRecordList[index : index + letterLenght] == subList: # start from each letter to check K lenght consecutive characters. idx = 0 idx +k = 6. idx =1 idx + K = 7, idx =2 idx +K =8. Check 6 characters portion for each iteration.
-        letterLenghtList.append(subList)
+        consecutiveLetterList.append(subList)
 
-print(str(list(letterLenghtList)))
+print(str(list(consecutiveLetterList)))
 
 
 # TRY TO COUNT HOW MANY TTTTTT AND HHHHHH in the list. 
