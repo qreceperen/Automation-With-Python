@@ -36,7 +36,9 @@ for index, letter in enumerate(joinflipRecordList):
     if joinflipRecordList[index : index + letterLenght] == subList: # start from each letter to check K lenght consecutive characters. idx = 0 idx +k = 6. idx =1 idx + K = 7, idx =2 idx +K =8. Check 6 characters portion for each iteration.
         consecutiveLetterList.append(subList)
 
-print(str(list(consecutiveLetterList)))
+# print(str(list(consecutiveLetterList)))
 
 
-# TRY TO COUNT HOW MANY TTTTTT AND HHHHHH in the list. 
+# Count How many consecutive 'H' or 'T' 
+
+print (f'Total number of consecutive "H" or "T" number is {len(consecutiveLetterList)}')
