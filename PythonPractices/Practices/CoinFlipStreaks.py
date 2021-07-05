@@ -41,4 +41,6 @@ for index, letter in enumerate(joinflipRecordList):
 
 # Count How many consecutive 'H' or 'T' 
 
-print (f'Total number of consecutive "H" or "T" number is {len(consecutiveLetterList)}')
+
+numberOfStreak = consecutiveLetterList
+print (f'Total number of consecutive "H" or "T" number is {len(numberOfStreak)}')
