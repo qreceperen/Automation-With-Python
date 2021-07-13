@@ -8,8 +8,24 @@ grid = [['.','.','.','.','.','.'],
         ['.','O','O','.','.','.'],
         ['.','.','.','.','.','.']]
 
-for j in range(len(grid[0])):
 
-    for i in range(len(grid)):
-        print(grid[i][j],end = '')
-    print('')
+for y in grid:
+    print (y[0],end = '')
+    print(y[1],end = '')
+    print(y[2],end = '')
+    print(y[3])
+    # print( y[1])
+
+
+# def CharacterPic(list):
+#     for y in range(len(list[0])):
+
+#         for x in range(len(list)):
+#             print(list[x][y],end = '')
+#         print('')
+
+
+# CharacterPic(grid)
+
+
+
