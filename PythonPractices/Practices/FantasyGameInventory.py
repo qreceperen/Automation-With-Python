@@ -1,31 +1,37 @@
-# stuff = {'rope':7, 'torch':2,'gold coin':42,'dagger':1,'arrow':12}
 
-# def displayInventory(inventory):
-#     print("Inventory: ")
-#     item_total = 0
-
-#     for k,v in inventory.items():
-#         item_total = item_total + v
-#         print(f'{v} {k}' )
-#     print("Total Number of items: " + str(item_total))
-
+'''Setdefault komutunu ogren'''
 
 # displayInventory(stuff)
 
 '''Write a function that update inventory from a list of loots.'''
 
-def addToInventory (inventory, addedItems):
-    print("Inventory:")
+
+##### SOLUTION ######
+
+
+#  Problem: List to Dictionary Function for Fantasy Game Inventory
+#  The url of the problem: https://automatetheboringstuff.com/chapter5/
+ 
+def displayInventory(inventory):
+    print('Inventory:')
     print('----------')
     item_total = 0
+    for k, v in inventory.items():
+        print(str(v) + ' ' + k)
+        item_total += v
+    print('\nTotal number of items: ' + str(item_total))
+    
+def addToInventory(inventory, addedItems):
+    for Item in addedItems:
+        inventory.setdefault(Item,0)
+        inventory[Item] += 1
+    return inventory
 
-    for k,v in inventory.items():
-        item_total = item_total + v 
-        print(f'{k} {v}')
-    #Write Code here
-
-    # We need to Iterate over list and update the dictionary according to the list. HOW???!!!
-
-inv = {"gold coin":42, 'rope':1}
-dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
-addToInventory(inv,dragonLoot)
+ 
+# inventory and addedItems
+inv = {'gold coin': 42, 'rope': 1}
+dragonloot = ['gold coin', 'dragger', 'gold coin', 'gold coin', 'ruby','rusty sword','dragon teeth'] 
+ 
+# Update the inventory
+inv = addToInventory(inv, dragonloot)
+displayInventory(inv)
