@@ -15,7 +15,7 @@ if len(sys.argv)< 2:
 keyphrase = sys.argv[1] # First command line argument.argv[0] is the script name (mclip.py)
 
 if keyphrase in TEXT:
-        pyperclip.copy(TEXT[keyphrase]) # copied the value in the dictionar from corresponded key.
+        pyperclip.copy(TEXT[keyphrase]) # copied the value in the dictionary from corresponded key.
         print('Text for ' + keyphrase + ' copied to clipboard.')
 else:
         print('There is no text for ' + keyphrase )
